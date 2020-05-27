@@ -13,6 +13,13 @@
 		DEF371DA247E0C7300674E2E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DEF371D8247E0C7300674E2E /* LaunchScreen.storyboard */; };
 		DEF371E6247E0CE700674E2E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEF371E4247E0CE700674E2E /* ViewController.swift */; };
 		DEF371E7247E0CE700674E2E /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DEF371E5247E0CE700674E2E /* ViewController.xib */; };
+		DEF371EC247E0DA500674E2E /* Vehicle.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEF371EB247E0DA500674E2E /* Vehicle.swift */; };
+		DEF371EF247E0F5000674E2E /* CarTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEF371ED247E0F5000674E2E /* CarTableViewCell.swift */; };
+		DEF371F0247E0F5000674E2E /* CarTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DEF371EE247E0F5000674E2E /* CarTableViewCell.xib */; };
+		DEF371F5247E0F6C00674E2E /* BikeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEF371F3247E0F6C00674E2E /* BikeTableViewCell.swift */; };
+		DEF371F6247E0F6C00674E2E /* BikeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DEF371F4247E0F6C00674E2E /* BikeTableViewCell.xib */; };
+		DEF371FA247E0F7A00674E2E /* MotoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEF371F8247E0F7A00674E2E /* MotoTableViewCell.swift */; };
+		DEF371FB247E0F7A00674E2E /* MotoTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DEF371F9247E0F7A00674E2E /* MotoTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +31,13 @@
 		DEF371DB247E0C7300674E2E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DEF371E4247E0CE700674E2E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		DEF371E5247E0CE700674E2E /* ViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ViewController.xib; sourceTree = "<group>"; };
+		DEF371EB247E0DA500674E2E /* Vehicle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Vehicle.swift; sourceTree = "<group>"; };
+		DEF371ED247E0F5000674E2E /* CarTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarTableViewCell.swift; sourceTree = "<group>"; };
+		DEF371EE247E0F5000674E2E /* CarTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CarTableViewCell.xib; sourceTree = "<group>"; };
+		DEF371F3247E0F6C00674E2E /* BikeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BikeTableViewCell.swift; sourceTree = "<group>"; };
+		DEF371F4247E0F6C00674E2E /* BikeTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BikeTableViewCell.xib; sourceTree = "<group>"; };
+		DEF371F8247E0F7A00674E2E /* MotoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MotoTableViewCell.swift; sourceTree = "<group>"; };
+		DEF371F9247E0F7A00674E2E /* MotoTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MotoTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +70,7 @@
 		DEF371CC247E0C7000674E2E /* MultipleCellTableView */ = {
 			isa = PBXGroup;
 			children = (
+				DEF371EA247E0D8300674E2E /* Model */,
 				DEF371E8247E0CEE00674E2E /* View */,
 				DEF371E3247E0CD800674E2E /* View Controller */,
 				DEF371E1247E0CC000674E2E /* App Delegate */,
@@ -103,8 +118,46 @@
 		DEF371E9247E0CF400674E2E /* Cell */ = {
 			isa = PBXGroup;
 			children = (
+				DEF371F7247E0F6F00674E2E /* Moto */,
+				DEF371F2247E0F5E00674E2E /* Bike */,
+				DEF371F1247E0F5600674E2E /* Car */,
 			);
 			path = Cell;
+			sourceTree = "<group>";
+		};
+		DEF371EA247E0D8300674E2E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				DEF371EB247E0DA500674E2E /* Vehicle.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		DEF371F1247E0F5600674E2E /* Car */ = {
+			isa = PBXGroup;
+			children = (
+				DEF371ED247E0F5000674E2E /* CarTableViewCell.swift */,
+				DEF371EE247E0F5000674E2E /* CarTableViewCell.xib */,
+			);
+			path = Car;
+			sourceTree = "<group>";
+		};
+		DEF371F2247E0F5E00674E2E /* Bike */ = {
+			isa = PBXGroup;
+			children = (
+				DEF371F3247E0F6C00674E2E /* BikeTableViewCell.swift */,
+				DEF371F4247E0F6C00674E2E /* BikeTableViewCell.xib */,
+			);
+			path = Bike;
+			sourceTree = "<group>";
+		};
+		DEF371F7247E0F6F00674E2E /* Moto */ = {
+			isa = PBXGroup;
+			children = (
+				DEF371F8247E0F7A00674E2E /* MotoTableViewCell.swift */,
+				DEF371F9247E0F7A00674E2E /* MotoTableViewCell.xib */,
+			);
+			path = Moto;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -165,9 +218,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DEF371FB247E0F7A00674E2E /* MotoTableViewCell.xib in Resources */,
 				DEF371DA247E0C7300674E2E /* LaunchScreen.storyboard in Resources */,
 				DEF371E7247E0CE700674E2E /* ViewController.xib in Resources */,
+				DEF371F0247E0F5000674E2E /* CarTableViewCell.xib in Resources */,
 				DEF371D7247E0C7300674E2E /* Assets.xcassets in Resources */,
+				DEF371F6247E0F6C00674E2E /* BikeTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -178,9 +234,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DEF371FA247E0F7A00674E2E /* MotoTableViewCell.swift in Sources */,
+				DEF371EC247E0DA500674E2E /* Vehicle.swift in Sources */,
 				DEF371E6247E0CE700674E2E /* ViewController.swift in Sources */,
+				DEF371F5247E0F6C00674E2E /* BikeTableViewCell.swift in Sources */,
 				DEF371CE247E0C7000674E2E /* AppDelegate.swift in Sources */,
 				DEF371D0247E0C7000674E2E /* SceneDelegate.swift in Sources */,
+				DEF371EF247E0F5000674E2E /* CarTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
